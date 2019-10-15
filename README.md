@@ -20,7 +20,7 @@ python3 server.py
 ```
 
 __Connections:__
-Once server is running, connect to ```127.0.0.1:5000``` (unless you have edited these values in server.py). Register and account. Log in and view your profile page for Account ID / Store # required for login.
+Once server is running, connect to ```127.0.0.1:5000``` in a web browser (unless you have edited these values in server.py). Register and account. Log in and view your profile page for Account ID / Store # required for login.
 
 Server connects to:
 ```
