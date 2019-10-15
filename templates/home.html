@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h2>Home Page</h2>
+<div>
+	<p>Welcome back, {{ email }}!</p>
+	<table>
+		<tr>
+			<td>Date:</td>
+			<td>Serial:</td>
+			<td>Test:</td>
+			<td>Version:</td>
+			<td>Result:</td>
+			<td>Pass Count:</td>
+			<td>Details:</td>
+			<td>Profile Log:</td>
+			<td>Full Log:</td>
+			<td>Event #:</td>
+		</tr>
+		{% for item in data %}
+		<tr>
+    		<td>{{item[14]|convert}}</td>
+    		<td>{{item[7]}}</td>
+    		<td>{{item[3]}}</td>
+    		<td>{{item[4]}}</td>
+    		<td>{{item[12]}}</td>
+    		<td>{{item[13]}}</td>
+    		<td><a href = "{{ item[2]  }}">Link</a></td>
+    		<td><a href = "{{ item[10] }}">Link</a></td>
+    		<td><a href = "{{ item[11] }}">Link</a></td>
+    		<td>{{item[2]}}</td>
+		</tr>
+		{% endfor %}
+		</tr>
+	</table>
+</div>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h2>Test Details</h2>
+<div>
+	<table>
+		<tr>
+			<td>Date:</td>
+			<td>Diagnostic Event Number:</td>
+			<td>Module Name:</td>
+			<td>Module Location:</td>
+			<td>Module Serial:</td>
+			<td>Test Name:</td>
+			<td>Test Number:</td>
+			<td>Test Result:</td>
+		</tr>
+		{% for item in file %}
+		<tr>
+    		<td>{{item[9]|convert}}</td>
+    		<td>{{item[2]}}</td>
+    		<td>{{item[3]}}</td>
+    		<td>{{item[4]}}</td>
+    		<td>{{item[5]}}</td>
+    		<td>{{item[6]}}</td>
+    		<td>{{item[7]}}</td>
+    		<td>{{item[8]}}</td>
+		</tr>
+		{% endfor %}
+	</table>
+</div>
+{% endblock %}

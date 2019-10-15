@@ -1,0 +1,24 @@
+{% extends 'layout2.html' %}
+
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+<h2>Profile Page</h2>
+<div>
+    <p>Your account details are below:</p>
+    <table>
+        <tr>
+            <td>Email:</td>
+            <td>{{ account[4] }}</td>
+        </tr>
+        <tr>
+            <td>Password Hash:</td>
+            <td> {{ account[7] }}</td>
+        </tr>
+        <tr>
+            <td>Account ID / Store #:</td>
+            <td> {{ account[8] }}</td>
+        </tr>
+    </table>
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block title %}Log{% endblock %}
+
+{% block content %}
+<h2>Full Log</h2>
+<div>
+	<table>
+		<tr>
+			<td>{{ urlpath }}</td>
+		</tr>
+		<tr>
+			<td>{{ file }}</td>
+		</tr>
+	</table>
+</div>
+{% endblock %}

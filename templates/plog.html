@@ -1,0 +1,84 @@
+{% extends 'layout.html' %}
+
+{% block title %}Log{% endblock %}
+
+{% block content %}
+<h2>Profile Log</h2>
+<div>
+	<table>
+		<tr>
+			<td>{{ urlpath }}</td>
+		</tr>
+		<tr>
+			<td> MLB Serial #:</td>
+			<td>{{ file["MLB_SN"] }}</td>
+		</tr>
+		<tr>
+			<td>MLB Config:</td>
+			<td>{{ file["MLB_CONFIG"] }}</td>
+		</tr>
+		<tr>
+			<td>System Serial #:</td>
+			<td>{{ file["SYS_SERIAL_NUM"] }}</td>
+		</tr>
+		<tr>
+			<td>AppleCare Name:</td>
+			<td>{{ file["APPLECARE_NAME"] }}</td>
+		</tr>
+		<tr>
+			<td>Processor:</td>
+			<td>Speed: {{ file["PROCESSOR"][0]["SPEED"] }}<br>
+				Model: {{ file["PROCESSOR"][0]["MODEL"] }}</td>
+		</tr>
+		<tr>
+			<td>GPU:</td>
+			{% if file["GPU"]|length >= 2 %}
+				<td>{{ file["GPU"][0]["MODEL"] }}<br>
+					{{ file["GPU"][1]["MODEL"] }}</td>
+			{% else %}
+				<td>{{ file["GPU"][0]["MODEL"] }}</td>
+			{% endif %}
+		</tr>
+		<tr>
+			<td>Hard Drive:</td>
+			{% if file["HARD_DRIVE"]|length >= 1 %}
+				<td>Vendor: {{ file["HARD_DRIVE"][0]["VENDOR"] }}<br>
+					Size: {{ file["HARD_DRIVE"][0]["SIZE"] }}<br>
+					Model: {{ file["HARD_DRIVE"][0]["MODEL"] }}<br>
+					Speed: {{ file["HARD_DRIVE"][0]["SPEED"] }}</td>
+			{% else %}
+				<td>N/A</td>
+			{% endif %}
+		</tr>
+		<tr>
+			<td>Optical Drive:</td>
+			{% if file["OPTICAL_DRIVE"]|length >= 1 %}
+				<td>{{ file["OPTICAL_DRIVE"][0]["VENDOR"] }}</td>
+			{% else %}
+				<td>N/A</td>
+			{% endif %}
+		</tr>
+		
+		<tr>
+			<td> Total Memory:</td>
+			<td>{{ file["TOTAL_MEM"] }}</td>
+		</tr>
+		<tr>
+			<td> Memory:</td>
+			<td>{{ file["MEMORY"][0]["SIZE"] }}<br>
+				{% if file["MEMORY"]|length >= 4 %}
+					{{ file["MEMORY"][1]["SIZE"] }}<br>
+					{{ file["MEMORY"][2]["SIZE"] }}<br>
+					{{ file["MEMORY"][3]["SIZE"] }}</td>
+				{% elif file["MEMORY"]|length >= 3 %}
+					{{ file["MEMORY"][1]["SIZE"] }}<br>
+					{{ file["MEMORY"][2]["SIZE"] }}</td>
+				{% elif file["MEMORY"]|length >= 2 %}
+					{{ file["MEMORY"][1]["SIZE"] }}</td>
+				{% else %}
+					N/A</td>
+				{% endif %}
+		</tr>
+	</table>
+</div>
+{% endblock %}
