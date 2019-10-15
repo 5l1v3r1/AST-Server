@@ -12,7 +12,7 @@ __Installation:__
       pip3 install mysql-connector-python
 5. Edit server.py and enter your mysql credentials and change the secret key.
 ```
-Note: Their might be other dependencies required depending on your current python installation. Any error messages should indicate what additional modules you need to install.
+Note: There might be other dependencies required depending on your current python installation. Any error messages should indicate what additional modules you need to install.
 
 __Usage:__
 ```
