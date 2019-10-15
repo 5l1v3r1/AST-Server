@@ -27,3 +27,9 @@ Server connects to:
 http://127.0.0.1:5000/services/ws/capture
 ```
 Your login credentials are the email you used to create the account, the password created and the store #.
+
+__TODO:__
+```
+- error handling
+- optimization
+```
