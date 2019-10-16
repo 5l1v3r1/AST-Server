@@ -4,13 +4,14 @@ AST Server is a python3 application for authenticating and handling diagnostic r
 __Installation:__
 ```
 1. copy files to desired location
-2. install mysql
-3. create database and import ast_server.sql
-4. install the following pip3 modules
+2. install python3 if not already installed
+3. install mysql
+4. create database and import ast_server.sql
+5. install the following pip3 modules
       pip3 install Flask
       pip3 install xmltodict
       pip3 install mysql-connector-python
-5. Edit server.py and enter your mysql credentials and change the secret key.
+6. Edit server.py and enter your mysql credentials and change the secret key.
 ```
 Note: There might be other dependencies required depending on your current python installation. Any error messages should indicate what additional modules you need to install.
 
