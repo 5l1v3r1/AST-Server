@@ -21,6 +21,7 @@ python3 server.py
 ```
 
 __Connections:__
+
 Once server is running, connect to ```127.0.0.1:5000``` in a web browser (unless you have edited these values in server.py). Register an account. Log in to the newly created account and view your profile page for Account ID / Store # required for login.
 
 Server connects to:
@@ -30,15 +31,17 @@ http://127.0.0.1:5000/services/ws/capture
 Your login credentials are the email you used to create the account, the password created and the store #.
 
 __Change Address:__
+
 The server comes configured by default to run on localhost (127.0.0.1:5000). But if you wish to change the ip address of the server, edit the host value on the very last line of server.py.
 
-Default Configureation:
+
+Default Configuration:
 ```
 if __name__ == "__main__":
 	app.run(debug=True, host='0.0.0.0')
 ```
 
-Example of Alternate Configuration:
+Example of an Alternate Configuration:
 ```
 if __name__ == "__main__":
 	app.run(debug=True, host='192.168.1.143')
