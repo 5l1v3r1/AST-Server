@@ -29,6 +29,21 @@ http://127.0.0.1:5000/services/ws/capture
 ```
 Your login credentials are the email you used to create the account, the password created and the store #.
 
+__Change Address:__
+The server comes configured by default to run on localhost (127.0.0.1:5000). But if you wish to change the ip address of the server, edit the host value on the very last line of server.py.
+
+Default Configureation:
+```
+if __name__ == "__main__":
+	app.run(debug=True, host='0.0.0.0')
+```
+
+Example of Alternate Configuration:
+```
+if __name__ == "__main__":
+	app.run(debug=True, host='192.168.1.143')
+```
+
 __TODO:__
 ```
 - error handling
