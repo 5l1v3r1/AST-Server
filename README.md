@@ -1,5 +1,5 @@
 # AST-Server
-AST Server is a python3 application for authenticating and handling diagnostic results for AST 1 ADR Server. Has been tested up to version 1.5.23v16.
+AST Server is a python3 application for authenticating and handling diagnostic results for AST 1 ADR Server. Has been tested up to version 1.5.25v38.
 
 __Installation:__
 ```
