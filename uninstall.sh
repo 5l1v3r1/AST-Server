@@ -1,4 +1,5 @@
 #!/bin/sh
+# Uninstaller for removing previous installations of Apple Service Toolkit (not for uninstalling this server)
 
 # Unload LaunchDaemons
 launchctl unload /System/Library/LaunchDaemons/com.apple.gw_controld.plist
