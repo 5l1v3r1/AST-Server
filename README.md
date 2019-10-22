@@ -52,3 +52,9 @@ __TODO:__
 - error handling
 - optimization
 ```
+
+__Extras__
+An uninstaller for previous installed versions of Apple Service Toolkit / Gateway manager. It is not an uninstaller for this server! It is to allow you to perform a clean install of Apple Service Toolkit. To run:
+```
+sudo bash uninstall.sh
+```
