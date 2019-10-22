@@ -55,7 +55,7 @@ __TODO:__
 
 __Extras:__
 
-An uninstaller for previous installed versions of Apple Service Toolkit / Gateway manager. It is not an uninstaller for this server! It is to allow you to perform a clean install of Apple Service Toolkit. To run:
+Included is an uninstaller for previously installed versions of Apple Service Toolkit / Gateway manager. It is not an uninstaller for this server! It is to enable you to perform a clean install of Apple Service Toolkit. To run:
 ```
 sudo bash uninstall.sh
 ```
