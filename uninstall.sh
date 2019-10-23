@@ -23,6 +23,14 @@ rm /usr/local/libexec/gw_controld
 rm /usr/local/libexec/gw_datad
 rm /usr/local/libexec/gw_logd
 
+# Remove man8
+rm -rf /share/man/man8/gw_controld.8
+rm -rf /share/man/man8/gw_datad.8
+rm -rf /share/man/man8/gw_logd.8
+
+# Remove SysLog Config
+rm -rf /private/etc/newsyslog.d/gateway.conf
+
 # Remove Diagnostics Gateway & support files
 rm -rf /Applications/Gateway\ Manager.app
 rm -rf /private/var/adg
