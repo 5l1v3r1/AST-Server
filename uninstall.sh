@@ -36,17 +36,17 @@ rm -rf /Applications/Gateway\ Manager.app
 rm -rf /private/var/adg
 
 # Remove Netboot Sets
-#rm -rf /Library/NetBoot/NetBootSP0/AppleServiceToolkit.nbi
-#rm -rf /Library/NetBoot/NetBootSP0/AppleDiagnosticOSs
-#rm -rf /Library/NetBoot/NetBootSP0/AppleDiagnosticOS
-#rm -rf /Library/NetBoot/NetBootSP0/AST64bit.nbi
-#rm -rf /Library/NetBoot/NetBootSP0/ASTLegacy.nbi
-#rm -rf /Library/NetBoot/NetBootSP0/Diagnostics.nbi
-#rm -rf /Library/NetBoot/NetBootSP0/i386
-#rm -rf /Library/NetBoot/NetBootSP0/TAOS_*
+rm -rf /Library/NetBoot/NetBootSP0/AppleServiceToolkit.nbi
+rm -rf /Library/NetBoot/NetBootSP0/AppleDiagnosticOSs
+rm -rf /Library/NetBoot/NetBootSP0/AppleDiagnosticOS
+rm -rf /Library/NetBoot/NetBootSP0/AST64bit.nbi
+rm -rf /Library/NetBoot/NetBootSP0/ASTLegacy.nbi
+rm -rf /Library/NetBoot/NetBootSP0/Diagnostics.nbi
+rm -rf /Library/NetBoot/NetBootSP0/i386
+rm -rf /Library/NetBoot/NetBootSP0/TAOS_*
 
 # Remove receipts
-#rm /Library/Receipts/apple.com.astos*
+rm /Library/Receipts/apple.com.astos*
 
 # Remove log files
 rm -rf /private/var/log/adg
