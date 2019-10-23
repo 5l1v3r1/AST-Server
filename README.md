@@ -24,7 +24,7 @@ __Connections:__
 
 Once server is running, connect to ```127.0.0.1:5000``` in a web browser (unless you have edited these values in server.py). Register an account. Log in to the newly created account and view your profile page for Account ID / Store # required for login.
 
-Server connects to: (make sure to use http and not https)
+Gateway Manager connects to: (make sure to use http and not https)
 ```
 http://127.0.0.1:5000/services/ws/capture
 ```
