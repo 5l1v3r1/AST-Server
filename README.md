@@ -28,6 +28,20 @@ python3 server_1527.py
 __Additional Installation Instructions for AST Server 1.5.27:__
 
 AST 1.5.27 will not work with server_1527.py out of the box. You will need to replace a few system files in order for it to work properly.
+```
+1. Install AST 1.5.27 normally
+2. replace the following files with the files from AST 1.5.25v38:
+
+/usr/local/libexec/gw_controld
+/usr/local/libexec/gw_datad
+/usr/local/libexec/gw_logd
+
+/usr/share/man/man8/gw_controld.8
+/usr/share/man/man8/gw_datad.8
+/usr/share/man/man8/gw_logd.8
+```
+These three files are what control the protocols for AST. This is still experimental. So far AST 1.5.27 authenticates and receives diagnostic heartbeats correctly. But more testing is required for actual diagnostic tests.
+
 __Connections:__
 
 Once server is running, connect to ```127.0.0.1:5000``` in a web browser (unless you have edited these values in server.py). Register an account. Log in to the newly created account and view your profile page for Account ID / Store # required for login.
