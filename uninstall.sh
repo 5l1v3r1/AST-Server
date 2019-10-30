@@ -24,9 +24,9 @@ rm /usr/local/libexec/gw_datad
 rm /usr/local/libexec/gw_logd
 
 # Remove man8
-rm -rf /share/man/man8/gw_controld.8
-rm -rf /share/man/man8/gw_datad.8
-rm -rf /share/man/man8/gw_logd.8
+rm -rf /usr/share/man/man8/gw_controld.8
+rm -rf /usr/share/man/man8/gw_datad.8
+rm -rf /usr/share/man/man8/gw_logd.8
 
 # Remove SysLog Config
 rm -rf /private/etc/newsyslog.d/gateway.conf
