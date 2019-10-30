@@ -42,7 +42,7 @@ AST 1.5.27 will not work with server_1527.py out of the box. You will need to re
 
 3. reboot system
 ```
-Utilities such as Pacifist can be used to extract the above mentioned files from the 1.5.25 installer. These files are what control the protocols for AST. This is still an experimental patching process. So far, this process seems to work correctly, and test logs etc are successfully received by the server. The only noticeable issue is cosmetic, in that when booted into the AST diagnostic utility, the AST Version indicator shows the red exclaimation symbol.
+Utilities such as Pacifist can be used to extract the above mentioned files from the 1.5.25 installer. These files are what control the protocols for AST. Replacing them negates the need to deal with 1.5.27's implimentation of RSA signature verification. This is still an experimental patching process. So far, this process seems to work correctly, and test logs etc are successfully received by the server. The only noticeable issue is cosmetic, in that when booted into the AST diagnostic utility, the AST Version indicator shows the red exclaimation symbol.
 
 __Web Interface for Account Management & Test Results:__
 
