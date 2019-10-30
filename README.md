@@ -1,5 +1,5 @@
 # AST-Server
-AST Server is a python3 application for authenticating and handling diagnostic results for AST 1 ADR Server. It has been tested up to version 1.5.25v38. It currently does NOT support version 1.5.27 or newer.
+AST Server is a python3 application for authenticating and handling diagnostic results for Apple's AST 1 ADR Server. The file "server.py" is designed for AST versions up to 1.5.25v38. For AST 1.5.27, the file "server_1527.py" is required.
 
 __Installation:__
 ```
@@ -11,15 +11,23 @@ __Installation:__
       pip3 install Flask
       pip3 install xmltodict
       pip3 install mysql-connector-python
-6. Edit server.py and enter your mysql credentials and change the secret key.
+6. Edit server.py or server_1527.py and enter your mysql credentials and change the secret key.
 ```
 Note: There might be other dependencies required depending on your current python installation. Any error messages should indicate what additional modules you need to install.
 
-__Usage:__
+__Usage for AST Servers up to version 1.5.25v38:__
 ```
 python3 server.py
 ```
 
+__Usage for AST Servers up to version 1.5.27:__
+```
+python3 server_1527.py
+```
+
+__Additional Installation Instructions for AST Server 1.5.27:__
+
+AST 1.5.27 will not work with server_1527.py out of the box. You will need to replace a few system files in order for it to work properly.
 __Connections:__
 
 Once server is running, connect to ```127.0.0.1:5000``` in a web browser (unless you have edited these values in server.py). Register an account. Log in to the newly created account and view your profile page for Account ID / Store # required for login.
@@ -28,7 +36,7 @@ Gateway Manager connects to: (make sure to use http and not https)
 ```
 http://127.0.0.1:5000/services/ws/capture
 ```
-Your login credentials are the email you used to create the account, the password created and the store #.
+Your login credentials are the email you used to create the account, the password created and the store #. Please note that AST server 1.5.27 does not require a password.
 
 __Change Address:__
 
