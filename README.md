@@ -20,7 +20,7 @@ __Usage for AST Servers up to version 1.5.25v38:__
 python3 server.py
 ```
 
-__Usage for AST Servers up to version 1.5.27:__
+__Usage for AST Server 1.5.27:__
 ```
 python3 server_1527.py
 ```
