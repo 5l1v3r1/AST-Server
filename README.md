@@ -42,11 +42,11 @@ AST 1.5.27 will not work with server_1527.py out of the box. You will need to re
 ```
 These files are what control the protocols for AST. This is still an experimental patching process. So far, this process seems to work correctly, and test logs etc are successfully received by the server. The only noticeable issue is cosmetic, in that when booted into the AST diagnostic utility, the AST Version indicator shows the red exclaimation symbol.
 
-__Connections:__
+__Web Interface for Account Management & Test Results:__
 
 Once server is running, connect to ```127.0.0.1:5000``` in a web browser (unless you have edited these values in server.py). Register an account. Log in to the newly created account and view your profile page for Account ID / Store # required for login.
 
-Gateway Manager connects to: (make sure to use http and not https)
+__AST Connection:__ (make sure to use http and not https)
 ```
 http://127.0.0.1:5000/services/ws/capture
 ```
