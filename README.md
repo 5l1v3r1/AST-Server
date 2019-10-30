@@ -40,7 +40,7 @@ AST 1.5.27 will not work with server_1527.py out of the box. You will need to re
 /usr/share/man/man8/gw_datad.8
 /usr/share/man/man8/gw_logd.8
 ```
-These files are what control the protocols for AST. This is still an experimental patching process. So far, this process seems to work correctly, and test logs etc are successfully received by the server. The only noticeable issue is cosmetic, in that when booted into the AST diagnostic utility, the AST Version symbol shows the red exclaimation symbol.
+These files are what control the protocols for AST. This is still an experimental patching process. So far, this process seems to work correctly, and test logs etc are successfully received by the server. The only noticeable issue is cosmetic, in that when booted into the AST diagnostic utility, the AST Version indicator shows the red exclaimation symbol.
 
 __Connections:__
 
