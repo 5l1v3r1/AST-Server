@@ -873,7 +873,7 @@ def parse_request_services():
 		else:
 			print('Error: FUA-10002, A server error occurred. Please contact support')
 			soaped = generate_error_FUA10002()
-			return soapedsingle-r
+			return soaped
 
 @app.template_filter('convert')
 def unix_timestamp_to_string_date(unix_time):
